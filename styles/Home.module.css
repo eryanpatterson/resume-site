@@ -6,4 +6,7 @@
 .heading {
     position: absolute;
     z-index: 0;
+    left: 30px;
+    padding: 5px 15px 5px 15px;
+    color: white;
 }

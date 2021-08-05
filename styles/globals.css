@@ -15,3 +15,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.material-icons-outlined {
+  position: relative;
+  bottom: 10px;
+  color: white;
+  font-size: 45px;
+  transition: color 1s;
+}
+

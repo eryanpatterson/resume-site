@@ -1,12 +1,98 @@
 .banner {
-    position: absolute;
+    position: relative;
     z-index: -1;
+    max-width: 1500px;
+    margin: auto;
+    border: 3px dashed blueviolet;
+    overflow: hidden;
 }
 
-.heading {
+.profile {
     position: absolute;
-    z-index: 0;
-    left: 30px;
-    padding: 5px 15px 5px 15px;
-    color: white;
+    top: 16%;
+    left: 10%;
+    width: 17%;
+    min-width: 100px;
+    max-height: 325px;
+    border: 7px solid white;
+    border-radius: 5px;
+    filter: grayscale();
+    box-shadow: 0px 0px 10px black; 
 }
+
+.headline {
+    position: absolute;
+    bottom: 50px;
+    right: 7%;
+    display: inline-block;
+    z-index: 1;
+    height: 200px;
+    max-width: 45%; 
+    font-family: 'Zilla Slab';
+    color: white;
+    font-size: 1.25rem;
+    letter-spacing: .25rem;
+    text-align: center;
+    text-shadow: 0 0 2px black;
+    vertical-align: center;
+    border: 3px dotted red;
+}
+
+.headline h1 {
+    text-decoration: underline white 4px;
+}
+
+.headline p {
+    font-size: 1.75rem;
+}
+
+.greeting {
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    width: 90%;
+    max-width: 1500px;
+    top: 20px;
+}
+
+.wrapper {
+    max-width: 950px;
+    margin: 0px auto;
+}
+
+.wrapper div {
+    position: relative;
+    display: inline-block;
+    min-width: 260px;
+    width: 30%;
+    max-width: 325px;
+    background-color: #000;
+    margin: 15px;
+    color: white;
+    opacity: 0.5;
+    vertical-align: top;
+    transition: height 1.5s;
+    float: none;
+}
+
+.folded {
+    height: 90px;
+}
+
+.dropped {
+    height: 220px;
+}
+
+.greeting div h2 {
+    text-align: center;
+    font-family: 'Zilla Slab';
+    font-size: 2rem;
+}
+
+.greeting div p {
+    height: 100px;
+    padding: 0 5px 0 5px;
+    text-align: center;
+    transition: color 1s;
+}
+

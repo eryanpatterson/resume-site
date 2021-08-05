@@ -3,8 +3,6 @@
     z-index: -1;
     max-width: 1500px;
     margin: auto;
-    border: 3px dashed blueviolet;
-    overflow: hidden;
 }
 
 .profile {
@@ -22,11 +20,11 @@
 
 .headline {
     position: absolute;
-    bottom: 50px;
+    top: 20%;
     right: 7%;
     display: inline-block;
     z-index: 1;
-    height: 200px;
+    max-height: 200px;
     max-width: 45%; 
     font-family: 'Zilla Slab';
     color: white;
@@ -34,16 +32,18 @@
     letter-spacing: .25rem;
     text-align: center;
     text-shadow: 0 0 2px black;
-    vertical-align: center;
-    border: 3px dotted red;
+    vertical-align: middle;
 }
 
-.headline h1 {
+.name {
     text-decoration: underline white 4px;
+    height: 50%;
+    font-size: 1.425vw;
 }
 
-.headline p {
-    font-size: 1.75rem;
+.tagline {
+    font-size: 1.88vw;
+    height: 50%;
 }
 
 .greeting {

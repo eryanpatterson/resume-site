@@ -1,0 +1,14 @@
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.container h1 {
+    font-family: 'Zilla Slab';
+}
+
+.main {
+    width: 90%;
+    margin: auto;
+}

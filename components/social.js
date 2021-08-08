@@ -1,10 +1,11 @@
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
 import Link from 'next/link'
+import styles from './social.module.css'
 
 export default function Social() {
 
     return (
-        <ul>
+        <ul className={styles.social}>
             <li>
                 <Link href="http://github.com/eryanpatterson">
                     <a><FaGithub /></a>

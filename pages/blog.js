@@ -3,6 +3,7 @@ import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
 import styles from "../styles/blog.module.css"
+import Footer from "../components/footer"
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData()
@@ -38,6 +39,7 @@ export default function Blog({ allPostsData }) {
                 ))}
             </ul>
             </div>
+            <Footer />
         </div>
     )
 }

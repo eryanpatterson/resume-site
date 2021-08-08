@@ -35,14 +35,3 @@ ul {
   justify-content: center;
 }
 
-#social ul {
-  display: inline-block;
-  padding: 0;
-}
-
-#social li {
-    display: inline-block;
-    font-size: 2rem;
-    padding: 10px;
-}
-

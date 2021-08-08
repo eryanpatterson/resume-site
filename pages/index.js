@@ -6,6 +6,7 @@ import banner from '../public/images/daytonAerial.jpg'
 import profile from '../public/images/Ethan.jpg'
 import { useState, useEffect } from 'react'
 import Social from '../components/social'
+import Footer from '../components/footer'
 
 export default function Home() {
   const [greetingDiv1, setStyle1] = useState(styles.folded)
@@ -77,6 +78,7 @@ export default function Home() {
         </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

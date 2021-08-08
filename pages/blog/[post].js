@@ -2,7 +2,7 @@ import Header from "../../components/header";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from 'next/head';
 import Date from "../../components/date"
-import { FaGithub } from "react-icons/fa";
+import Footer from "../../components/footer"
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.post)
@@ -36,6 +36,7 @@ export default function Post({ postData }) {
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml}} />
             </article>
+            <Footer />
         </div>
     )
 }

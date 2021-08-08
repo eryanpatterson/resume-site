@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './header.module.css'
+import styles from './headandfoot.module.css'
 import { useRouter } from 'next/router';
 
 const Header = () => {

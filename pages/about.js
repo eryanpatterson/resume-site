@@ -1,5 +1,6 @@
 import Header from "../components/header";
 import styles from "../styles/about.module.css"
+import Footer from "../components/footer"
 
 export default function About() {
     return (
@@ -53,6 +54,7 @@ export default function About() {
                     </ul>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

@@ -1,0 +1,34 @@
+.container {
+    margin: 50px 30px 50px 30px;
+}
+
+.blurb {
+    margin: 20px 0 50px 10px;
+    width: 600px;
+}
+
+.blurb h2 {
+    font-family: 'Gowun Batang';
+    font-size: 1.5rem;
+    -webkit-transform: scaleY(2); /* Safari */
+    transform: scaleY(2);
+}
+
+.blurb hr {
+    margin-top: 30px;
+    width: 60%;
+    text-align: left;
+}
+
+.list {
+    list-style: none;
+}
+
+.post {
+    border: 1px solid #6A6C6E;
+    width: 35%;
+    margin-left: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.25rem;
+}

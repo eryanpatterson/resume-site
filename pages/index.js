@@ -5,6 +5,7 @@ import Header from '../components/header'
 import banner from '../public/images/daytonAerial.jpg'
 import profile from '../public/images/Ethan.jpg'
 import { useState, useEffect } from 'react'
+import Social from '../components/social'
 
 export default function Home() {
   const [greetingDiv1, setStyle1] = useState(styles.folded)
@@ -34,7 +35,7 @@ export default function Home() {
       <div className={styles.banner}>
         <Image 
         src={banner} 
-        alt="Aerial view of Dayton, Ohio"
+        alt="Aerial view of Dayton, Ohio. Credit: Michael Bowman on Unsplash"
         width={1949}
         height={552}
         priority
@@ -58,7 +59,7 @@ export default function Home() {
       </div>
       <div className={styles.greeting}>
         <div className={styles.wrapper}>
-        <div id='floatLeft' className={greetingDiv1}>
+        <div className={greetingDiv1}>
           <h2>
             Hi!
           </h2>
@@ -70,13 +71,9 @@ export default function Home() {
           <p>a front-end dev who is server and database-curious.
           I have experience with HTML/Css, React, Next.js, and Bootstrap.</p>
         </div>
-        <div id='floatRight' className={greetingDiv3}>
+        <div id='social' className={greetingDiv3}>
           <h2>Ethan</h2>
-          <ul>
-            <li>Github</li>
-            <li>LinkedIn</li>
-            <li>Twitter</li>
-          </ul>
+          <Social />
         </div>
         </div>
       </div>

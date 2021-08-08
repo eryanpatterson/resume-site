@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab|Gowun+Batang|Bitter:200');
 
 html,
 body {
@@ -24,5 +24,25 @@ a {
   color: white;
   font-size: 45px;
   transition: color 1s;
+}
+
+ul {
+  list-style: none;
+}
+
+#social {
+  text-align: center;
+  justify-content: center;
+}
+
+#social ul {
+  display: inline-block;
+  padding: 0;
+}
+
+#social li {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 10px;
 }
 

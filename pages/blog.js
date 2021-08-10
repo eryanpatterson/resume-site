@@ -25,7 +25,7 @@ export default function Blog({ allPostsData }) {
             </div>
             <ul className={styles.list}>
                 {allPostsData.map(({ id, date, title }) => (
-                    <li className={styles.post}>
+                    <li  key={id} className={styles.post}>
                         <Link href={`/blog/${id}`}>
                             <a>{title}</a>
                         </Link>

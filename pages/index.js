@@ -57,11 +57,10 @@ export default function Home() {
           <h2>
             Hi!
           </h2>
-          <p>I'm a self-taught web developer looking for an opportunity to 
-          learn, grow, and contribute to a team.</p>
+          <p>{"I'm a self-taught web developer looking for an opportunity to learn, grow, and contribute to a team."}</p>
         </div>
         <div id='centered' className={greetingDiv2}>
-          <h2>I'm</h2>
+          <h2>I&apos;m</h2>
           <p>a front-end dev who is server and database-curious.
           I have experience with HTML/Css, React, Next.js, and Bootstrap.</p>
         </div>

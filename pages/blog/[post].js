@@ -3,6 +3,7 @@ import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from 'next/head';
 import Date from "../../components/date"
 import Footer from "../../components/footer"
+import Layout from "../../components/layout";
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.post)
@@ -24,11 +25,11 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
 
     return (
-        <div>
+        <Layout>
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <Header />
+
             <article>
                 <h1>{postData.title}</h1>
                 <div>
@@ -36,7 +37,6 @@ export default function Post({ postData }) {
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml}} />
             </article>
-            <Footer />
-        </div>
+        </Layout>
     )
 }

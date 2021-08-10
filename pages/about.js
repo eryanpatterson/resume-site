@@ -1,11 +1,9 @@
-import Header from "../components/header";
 import styles from "../styles/about.module.css"
-import Footer from "../components/footer"
+import Layout from "../components/layout";
 
 export default function About() {
     return (
-        <div>
-            <Header />
+        <Layout>
             <div className={styles.container}>
                 <h1>Experience:</h1>
                 <div className={styles.main}>
@@ -54,7 +52,6 @@ export default function About() {
                     </ul>
                 </div>
             </div>
-            <Footer />
-        </div>
+        </Layout>
     )
 }

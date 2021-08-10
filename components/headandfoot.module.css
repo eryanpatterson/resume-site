@@ -4,6 +4,7 @@
     background-color: #55DDFF;
     padding: 10px;
     position: sticky;
+    box-shadow: 0 0.5px 5px rgb(54, 53, 53);
   }
 
 .footer {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab|Gowun+Batang|Bitter:200');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab|Gowun+Batang|Bitter:200|Material+Icons+Outlined');
 
 html,
 body {
@@ -6,8 +6,6 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    height: 100%;
-    overlow-x: hidden;
 }
 
 a {

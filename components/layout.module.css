@@ -1,12 +1,12 @@
 .pageWrapper {
-    min-height: 100%;
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 2px dashed red;
+    min-height: 100vh;
 }
 
 .main {
-    height: calc(100vh - 150px);
     margin: 0;
+    padding-bottom: 90px;
 }

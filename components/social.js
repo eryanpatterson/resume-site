@@ -8,17 +8,17 @@ export default function Social() {
         <ul className={styles.social}>
             <li>
                 <Link href="http://github.com/eryanpatterson">
-                    <a><FaGithub /></a>
+                    <a target="_blank"><FaGithub /></a>
                 </Link>
             </li>
             <li>
                 <Link href="http://www.linkedin.com/in/eryanpatterson/">
-                    <a><FaLinkedin /></a>
+                    <a target="_blank"><FaLinkedin /></a>
                 </Link>
             </li>
             <li>
                 <Link href="http://twitter.com/eryanpatterson">
-                    <a><FaTwitter /></a>
+                    <a target="_blank"><FaTwitter /></a>
                 </Link>
             </li>
         </ul>

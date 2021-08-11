@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from './headandfoot.module.css'
 import { useRouter } from 'next/router';
+import MenuButton from './menu-button';
 
 const Header = () => {
     
@@ -19,8 +20,9 @@ const Header = () => {
             <header className={styles.header}>
                 <h1 className={styles.heading}>
                     {pageName}
-                </h1>
+                </h1> 
                 <nav className={styles.nav}>
+                    <MenuButton />
                     <div className={styles.link}>
                         <Link href="/">
                             <a>Home</a>

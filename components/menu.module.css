@@ -1,0 +1,50 @@
+.button {
+    position: relative;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    border: 3px solid white;
+}
+
+.burger {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;    
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.burger::before {
+    transform: translateY(-11px);
+}
+.burger::after {
+    transform: translateY(11px);
+}
+
+/* Animation, inspired by codeSTACKr on YouTube */
+
+.button.open .burger {
+    transform: translateX(50px);
+    background: transparent;
+}
+
+.button.open .burger::before {
+    transform: rotate(-45deg) translate(-35px, -35px);
+}
+.button.open .burger::after {
+    transform: rotate(45deg) translate(-35px, 35px);
+}

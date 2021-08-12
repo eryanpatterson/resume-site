@@ -29,7 +29,7 @@ export default function Home() {
       <div className={styles.banner}>
         <Image 
         src={banner} 
-        alt="Aerial view of Dayton, Ohio. Credit: Michael Bowman on Unsplash"
+        alt="Photo of website builder in park"
         width={1949}
         height={1076}
         priority

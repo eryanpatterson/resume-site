@@ -6,7 +6,6 @@
     top: 0;
     bottom: 0;
     right: 0px;
-    overflow: hidden;
     box-sizing: border-box;
     align-items: center;
     transition: all .5s ease-in-out;
@@ -48,16 +47,17 @@
     width: 100px;
     height: fit-content;
     text-align: right;
-    background: #303030;
+    color: transparent;
+    background: transparent;
     padding-right: 7px;
-    transform: translateX(150px);
+    transform: translateX(-100px);
     transition: all .5s ease-in-out;
 }
 
 
 .menuItem {
     padding: 25px 8% 25px 8%;
-    color: white;
+    
     font-size: 1.2rem;
     text-transform: uppercase;
 }
@@ -70,6 +70,8 @@
 
 .nav.open .dropMenu {
     transform: translateX(0px);
+    background: #303030;
+    color: white;
 }
 
 /* Button */

@@ -2,7 +2,6 @@ import Layout from '../components/layout'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import banner from '../public/images/ethan2.jpg'
-import profile from '../public/images/Ethan.jpg'
 import { useState, useEffect } from 'react'
 import Social from '../components/social'
 

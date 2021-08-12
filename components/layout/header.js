@@ -1,7 +1,6 @@
-import Link from 'next/link';
 import styles from './headandfoot.module.css'
 import { useRouter } from 'next/router';
-import MenuButton from './menu-button';
+import Nav from './nav';
 
 const Header = () => {
     
@@ -10,35 +9,26 @@ const Header = () => {
     let pageName = ''
 
     const pages = ['HOME' , 'ABOUT' , 'BLOG'];
+    let headerStyles = [styles.header];
 
-    path === '/' ? pageName = pages[0] : 
-        (path === '/about' ? pageName = pages[1] : pageName = pages[2])
+    if (path === '/') {
+        pageName = pages[0];
+        headerStyles.push(styles.home)
+    } else if (path === '/about') {
+        pageName = pages[1]
+    } else {
+        pageName = pages[2]
+    }
     
+
 
     return (
         <div>
-            <header className={styles.header}>
+            <header className={headerStyles.join(' ')}>
                 <h1 className={styles.heading}>
                     {pageName}
                 </h1> 
-                <nav className={styles.nav}>
-                    <MenuButton />
-                    <div className={styles.link}>
-                        <Link href="/">
-                            <a>Home</a>
-                        </Link>
-                    </div>
-                    <div className={styles.link}>    
-                        <Link href="/about">
-                            <a>About</a>
-                        </Link>
-                    </div>
-                    <div className={styles.link}>
-                        <Link href='/blog'>
-                            <a>Blog</a>
-                        </Link>
-                    </div>
-                </nav>
+                <Nav />
             </header>
         </div>
     )

@@ -2,14 +2,14 @@ import styles from './menu.module.css'
 import { useState } from 'react';
 
 const MenuButton = () => {
-    const [button, setStyle] = useState(styles.button)
+    const [button, setButton] = useState(styles.button)
     const [open, setOpen] = useState(false)
 
-    const openStyles = [styles.button, styles.open];
+    const btnStyles = [styles.button, styles.open];
 
     function handleClick() {
         if (!open) {
-            setStyle(openStyles.join(' '));
+            setButton(openStyles.join(' '));
             setOpen(true)
         } else {
             setStyle(styles.button);

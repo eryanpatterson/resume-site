@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import banner from '../public/images/daytonAerial.jpg'
+import banner from '../public/images/ethan2.jpg'
 import profile from '../public/images/Ethan.jpg'
 import { useState, useEffect } from 'react'
 import Social from '../components/social'
@@ -31,21 +31,11 @@ export default function Home() {
         src={banner} 
         alt="Aerial view of Dayton, Ohio. Credit: Michael Bowman on Unsplash"
         width={1949}
-        height={552}
+        height={1076}
         priority
         layout='responsive'
         />
-        <div className={styles.profile}>
-          <Image
-            src={profile}
-            priority
-            alt='Headshot of the author'
-            layout='responsive'
-            width={310}
-            height={400}
-            className={styles.ethan}
-          />
-        </div>
+        
         <div className={styles.headline}>
           <div className={styles.name}><h1>Ethan Patterson</h1></div>
           <div className={styles.tagline}><p>JavaScript Developer in Dayton, Ohio</p></div>

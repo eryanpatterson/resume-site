@@ -1,5 +1,5 @@
 import styles from "./headandfoot.module.css"
-import Social from "./social"
+import Social from "../social"
 
 const Footer = () => {
 

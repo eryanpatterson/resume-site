@@ -1,12 +1,19 @@
 .button {
-    position: relative;
+    position: absolute;
+    right: 30px;
     display: flex;
-    height: 60px;
+    top: 0;
+    bottom: 0;
     width: 60px;
     justify-content: center;
     align-items: center;
     transition: all .5s ease-in-out;
-    border: 3px solid white;
+}
+
+@media only screen and (min-width: 768px) {
+    .button {
+        display: none;
+    }
 }
 
 .burger {

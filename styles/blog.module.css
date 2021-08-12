@@ -1,10 +1,7 @@
 .container {
-    margin: 50px 30px 50px 30px;
-}
-
-.blurb {
-    margin: 20px 0 50px 10px;
-    width: 600px;
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
 }
 
 .blurb h2 {
@@ -22,11 +19,14 @@
 
 .list {
     list-style: none;
+    padding-top: 20px;
 }
 
 .post {
     border: 1px solid #6A6C6E;
-    width: 35%;
+    width: 40%;
+    min-width: 100px;
+    max-width: 250px;
     margin-left: 100px;
     margin-top: 20px;
     padding: 10px;

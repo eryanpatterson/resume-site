@@ -9,6 +9,6 @@ Using Next made the layout and routing super simple. Each page is a React compon
 
 The styling ended up being the lion's share of the work on this site. Next's css modules helped keep things clean, but I chose to do all custom CSS, which added quite a bit of legwork in trying to get things up to par. Using a solution like Bootstrap or Tailwind would likely have made life easier!
 
-The photo of Dayton on the homepage is courtesy of Michael Bowman via Unsplash, and the social media icons are from Font-Awesome via one of those other npm modules I alluded to, React-Icons.
+The social media icons are from Font-Awesome via one of those other npm modules I alluded to, React-Icons.
 
 If you want to chat about any of the technologies I used, have any suggestions or observations regarding this site, or anything else, hit me on Twitter!

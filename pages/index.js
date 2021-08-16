@@ -6,20 +6,20 @@ import { useState, useEffect } from 'react'
 import Social from '../components/social'
 
 export default function Home() {
-  const [greetingDiv1, setStyle1] = useState(styles.folded)
-  const [greetingDiv2, setStyle2] = useState(styles.folded)
-  const [greetingDiv3, setStyle3] = useState(styles.folded)
+  const [greetingDiv1, setStyle1] = useState(styles.white)
+  const [greetingDiv2, setStyle2] = useState(styles.white)
+  const [greetingDiv3, setStyle3] = useState(styles.white)
 
   useEffect(() => {
-    setTimeout(() => {setStyle1(styles.dropped)}, 500)
+    setTimeout(() => {setStyle1(styles.black)}, 500)
   })
 
   useEffect(() => {
-    setTimeout(() => {setStyle2(styles.dropped)}, 1000)
+    setTimeout(() => {setStyle2(styles.black)}, 1000)
   })
 
   useEffect(() => {
-    setTimeout(() => {setStyle3(styles.dropped)}, 1500)
+    setTimeout(() => {setStyle3(styles.black)}, 1500)
   })
 
   return (

@@ -80,12 +80,12 @@
     }
 }
 
-.folded {
-    height: 90px;
+.white {
+    color: white;
 }
 
-.dropped {
-    height: 220px;
+.black {
+    color: black;
 }
 
 .greeting div h2 {

@@ -35,7 +35,7 @@ export default function Blog({ allPostsData }) {
                     </li>
                 ))}
             </ul>
-            </div>
+           </div>
         </Layout>
     )
 }

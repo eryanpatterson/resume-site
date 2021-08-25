@@ -25,10 +25,12 @@ const Header = () => {
     return (
         <div>
             <header className={headerStyles.join(' ')}>
-                <h1 className={styles.heading}>
-                    {pageName}
-                </h1> 
-                <Nav />
+                <div className={styles.headerContent}>
+                    <h1 className={styles.heading}>
+                        {pageName}
+                    </h1> 
+                    <Nav />
+                </div>
             </header>
         </div>
     )

@@ -1,7 +1,9 @@
 .container {
     width: 80%;
+    max-width: 1200px;
     margin: auto;
-    margin-top: 50px;
+    padding: 20px;
+    padding-top: 30px;
 }
 
 .container h1 {

@@ -14,6 +14,9 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ allPostsData }) {
+    allPostsData.forEach(element => { 
+        console.log(element.title);
+    });
     return (
         <Layout>
             <div className={styles.container}>

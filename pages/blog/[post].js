@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Date from "../../components/date"
 import Layout from "../../components/layout";
 import styles from "../../styles/post.module.css"
+import Highlight from "react-highlight";
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.post)
@@ -27,6 +28,7 @@ export default function Post({ postData }) {
         <Layout>
             <Head>
                 <title>{postData.title}</title>
+                <link rel="stylesheet" href="../../node_modules/highlight.js/styles/atom-one-dark.css"></link>
             </Head>
 
             <article className={styles.container}>
@@ -34,7 +36,9 @@ export default function Post({ postData }) {
                 <div>
                     <Date dateString={postData.date} />
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml}} />
+                <Highlight innerHTML={true}>
+                    {postData.contentHtml}
+                </Highlight>
             </article>
         </Layout>
     )

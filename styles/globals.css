@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Zilla+Slab|Gowun+Batang|Bitter:200|Material+Icons+Outlined');
+@import url('../node_modules/highlight.js/styles/base16/material.css');
 
 html,
 body {

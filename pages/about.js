@@ -2,6 +2,8 @@ import styles from "../styles/about.module.css"
 import Layout from "../components/layout";
 
 export default function About() {
+
+
     return (
         <Layout>
             <div className={styles.container}>
@@ -38,18 +40,28 @@ export default function About() {
                 </div>
                 <h1>Technologies:</h1>
                 <div className={styles.main}>
-                    <h2>I have experience with...</h2>
-                    <ul>
-                        <li>React</li>
-                        <li>Next.js</li>
-                        <li>Node.js</li>
-                        <li>Passport.js</li>
-                        <li>Bootstrap</li>
-                        <li>Vercel</li>
-                        <li>Heroku</li>
-                        <li>MongoDB Atlas</li>
-                        <li>Git/Github</li>
-                    </ul>
+                    <div className={styles.half}>
+                        <h2>I have experience with...</h2>
+                        <ul>
+                            <li>React</li>
+                            <li>Next.js</li>
+                            <li>Node.js</li>
+                            <li>Passport.js</li>
+                            <li>Bootstrap</li>
+                            <li>Vercel</li>
+                            <li>Heroku</li>
+                            <li>MongoDB Atlas</li>
+                            <li>Git/Github</li>
+                        </ul>
+                    </div>
+                    <div className={styles.half}>
+                        <h2>Projects</h2>
+                        <p>Things I've built (or am currently building)</p>
+                        <ul>
+                            {//projects.foreach()}
+                            }
+                        </ul>
+                    </div>
                 </div>
             </div>
         </Layout>

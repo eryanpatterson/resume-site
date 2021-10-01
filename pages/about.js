@@ -54,7 +54,7 @@ export default function About() {
                             <li>Git/Github</li>
                         </ul>
                     </div>
-                    <div className={styles.half}>
+                    {/*<div className={styles.half}>
                         <h2>Projects</h2>
                         <p>Things I've built (or am currently building)</p>
                         <ul>
@@ -62,6 +62,7 @@ export default function About() {
                             }
                         </ul>
                     </div>
+                    */}
                 </div>
             </div>
         </Layout>

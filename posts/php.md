@@ -48,7 +48,7 @@ Is it a little bit funky? Sure. Do I feel strange putting logical code inside pa
 
 #### *Reason 2:* The website I built was fairly simple
 
-The are the particulars of a given language/library/framework, and then there is the situation and needs of a project. The demands I placed on my code while making the site in question were, quite simply, not very high. Don't get me wrong -- I had a lot of fun making sure that I didn't have to write out a bunch of redundant code, and the site scales near-effortlessly based on what's in the database. Probably 90% of the visual content on the site is built dynamically* based on what the server gets back from the DB, using a lot of for and foreach loops.
+There are the particulars of a given language/library/framework, and then there is the situation and needs of a project. The demands I placed on my code while making the site in question were, quite simply, not very high. Don't get me wrong -- I had a lot of fun making sure that I didn't have to write out a bunch of redundant code, and the site scales near-effortlessly based on what's in the database. Probably 90% of the visual content on the site is built dynamically* based on what the server gets back from the DB, using a lot of for and foreach loops.
 
 <sup> *Note that I am NOT referring to dynamic vs static rendering. </sup>
 
@@ -57,6 +57,27 @@ Nonetheless, the site doesn't have to handle user authentication, or user input 
 #### *Reason 3:* PHP lends itself to modularity...sort of
 
 For someone who develops a lot in React, using <?php include('my-dir/other-code/code.php') ?> to drop in reusable code from another file feels familiar. What doesn't is the fact that there's no difference whatsoever in putting that include() in vs typing out the code in question in its entirety. What do you mean, I can begin or end a file in the middle of an HTML <head> section? What is this madness?! Where React is designed to be modular; PHP is just agnostic as to where, and how much, you chop it up. This means you can avoid a lot of redundancy and unneccessary typing in a fairly simple PHP app that doesn't even use a framework. Once again, PHP allows the dev do whatever they please. It's a good feeling.
+
+    This...
+    
+    <?php require_once( ROOT_PATH . '/components/head.php') ?>
+        <title>My Page Title</title>
+    </head>
+    
+    ...can do the same thing as this:
+    
+    <head> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/cssbootstrap.  min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"><script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"><script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Glory:wght@600family=Glory:wght@400&   family=Oswald:ital,wght@1,500&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="assets/css/main.css?v=<?php echo time(); ?>">
+        <meta charset="UTF-8">
+
+        <title>My Page Title</title>
+    </head>
 
 But not so fast. Is this true modularity? The components of a React app are largely self-contained an self-consistent. Not so with PHP. This means PHP has a lower bar for the dev to clear in just getting something to work. Unfortunately, the road, er...the API that connects to hell, if you will, is full of code that "just works." Extensibility, maintainability, and just plain old **readability** matter immensely. A supposedly modular PHP application of any size is very likely a few commits away from becoming a jigsaw puzzle. A component of a modular app shouldn't just keep you from rewriting code. It should give others a sense of where and how it should fit, without having to do too much digging.
 

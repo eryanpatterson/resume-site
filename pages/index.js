@@ -2,14 +2,10 @@ import Layout from '../components/layout'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import banner from '../public/images/ethan2.jpg'
-import { useState, useEffect } from 'react'
 import Social from '../components/social'
 import Projects from '../lib/projects'
 
 export default function Home() {
-  const [greetingDiv1, setStyle1] = useState(styles.white)
-  const [greetingDiv2, setStyle2] = useState(styles.white)
-  const [greetingDiv3, setStyle3] = useState(styles.white)
 
   return (
     <Layout>
@@ -32,24 +28,24 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.greeting}>
           <div className={styles.wrapper}>
-            <div className={greetingDiv1}>
+            <div>
               <h2>
                 Hi!
               </h2>
               <p>{"I'm a self-taught web developer looking for an opportunity to learn, grow, and contribute to a team."}</p>
             </div>
-            <div id='centered' className={greetingDiv2}>
+            <div id='centered'>
               <h2>I&apos;m</h2>
-              <p>a front-end dev who is server and database-curious.
-              I have experience with HTML/Css, React, Next.js, and Bootstrap.</p>
+              <p>most at home on the front end but I have significant experience working with different server
+               and database types as well as using APIs.</p>
             </div>
-            <div id='social' className={greetingDiv3}>
+            <div id='social'>
               <h2>Ethan</h2>
               <Social />
             </div>
           </div>
         </div>
-        <h2>Things I've Built</h2>
+        <h2>Things I&apos;ve Built</h2>
         <div className={styles.portfolio}>
           <Projects />
         </div>

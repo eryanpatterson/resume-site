@@ -28,7 +28,6 @@ export default function Post({ postData }) {
         <Layout>
             <Head>
                 <title>{postData.title}</title>
-                <link rel="stylesheet" href="../../node_modules/highlight.js/styles/atom-one-dark.css"></link>
             </Head>
 
             <article className={styles.container}>

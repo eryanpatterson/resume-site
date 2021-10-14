@@ -53,16 +53,7 @@ export default function About() {
                             <li>MongoDB Atlas</li>
                             <li>Git/Github</li>
                         </ul>
-                    </div>
-                    {/*<div className={styles.half}>
-                        <h2>Projects</h2>
-                        <p>Things I've built (or am currently building)</p>
-                        <ul>
-                            {//projects.foreach()}
-                            }
-                        </ul>
-                    </div>
-                    */}
+                    </div>                    
                 </div>
             </div>
         </Layout>

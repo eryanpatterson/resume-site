@@ -46,6 +46,12 @@
     height: 50%;
 }
 
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
 .greeting {
     position: relative;
     display: block;
@@ -78,6 +84,12 @@
         margin: 15px;
         vertical-align: top;
     }
+
+    .portfolio {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 }
 
 .white {
@@ -100,4 +112,34 @@
     text-align: center;
     transition: color 1s;
 }
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+}
+
+.portfolio div {
+    width: 375px;
+    height: 300px;
+}
+
+.portfolio div:hover {
+    box-shadow: 0 0 4px black;
+    transform: scale(1.01);
+}
+
+.portfolio a:hover {
+    opacity: 0.5;
+}
+
+.portfolio p {
+    position: absolute;
+    color: green;
+    z-index: +1;
+}
+
 

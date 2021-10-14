@@ -4,23 +4,12 @@ import styles from '../styles/Home.module.css'
 import banner from '../public/images/ethan2.jpg'
 import { useState, useEffect } from 'react'
 import Social from '../components/social'
+import Projects from '../lib/projects'
 
 export default function Home() {
   const [greetingDiv1, setStyle1] = useState(styles.white)
   const [greetingDiv2, setStyle2] = useState(styles.white)
   const [greetingDiv3, setStyle3] = useState(styles.white)
-
-  useEffect(() => {
-    setTimeout(() => {setStyle1(styles.black)}, 500)
-  })
-
-  useEffect(() => {
-    setTimeout(() => {setStyle2(styles.black)}, 1000)
-  })
-
-  useEffect(() => {
-    setTimeout(() => {setStyle3(styles.black)}, 1500)
-  })
 
   return (
     <Layout>
@@ -40,23 +29,29 @@ export default function Home() {
           <div className={styles.tagline}><p>JavaScript Developer in Dayton, Ohio</p></div>
         </div>
       </div>
-      <div className={styles.greeting}>
-        <div className={styles.wrapper}>
-        <div className={greetingDiv1}>
-          <h2>
-            Hi!
-          </h2>
-          <p>{"I'm a self-taught web developer looking for an opportunity to learn, grow, and contribute to a team."}</p>
+      <div className={styles.container}>
+        <div className={styles.greeting}>
+          <div className={styles.wrapper}>
+            <div className={greetingDiv1}>
+              <h2>
+                Hi!
+              </h2>
+              <p>{"I'm a self-taught web developer looking for an opportunity to learn, grow, and contribute to a team."}</p>
+            </div>
+            <div id='centered' className={greetingDiv2}>
+              <h2>I&apos;m</h2>
+              <p>a front-end dev who is server and database-curious.
+              I have experience with HTML/Css, React, Next.js, and Bootstrap.</p>
+            </div>
+            <div id='social' className={greetingDiv3}>
+              <h2>Ethan</h2>
+              <Social />
+            </div>
+          </div>
         </div>
-        <div id='centered' className={greetingDiv2}>
-          <h2>I&apos;m</h2>
-          <p>a front-end dev who is server and database-curious.
-          I have experience with HTML/Css, React, Next.js, and Bootstrap.</p>
-        </div>
-        <div id='social' className={greetingDiv3}>
-          <h2>Ethan</h2>
-          <Social />
-        </div>
+        <h2>Things I've Built</h2>
+        <div className={styles.portfolio}>
+          <Projects />
         </div>
       </div>
       

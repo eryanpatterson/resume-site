@@ -14,9 +14,9 @@ export default function Home() {
         <Image 
         src={banner} 
         alt="Photo of website builder in park"
+        priority
         width={1949}
         height={1076}
-        priority
         layout='responsive'
         />
         

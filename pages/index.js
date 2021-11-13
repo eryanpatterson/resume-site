@@ -22,27 +22,15 @@ export default function Home() {
         
         <div className={styles.headline}>
           <div className={styles.name}><h1>Ethan Patterson</h1></div>
-          <div className={styles.tagline}><p>JavaScript Developer in Dayton, Ohio</p></div>
+          <div className={styles.tagline}><p>Web Developer in Dayton, Ohio</p></div>
         </div>
       </div>
       <div className={styles.container}>
         <div className={styles.greeting}>
           <div className={styles.wrapper}>
-            <div>
-              <h2>
-                Hi!
-              </h2>
-              <p>{"I'm a self-taught web developer looking for an opportunity to learn, grow, and contribute to a team."}</p>
-            </div>
-            <div id='centered'>
-              <h2>I&apos;m</h2>
-              <p>most at home on the front end but I have significant experience working with different server
-               and database types as well as using APIs.</p>
-            </div>
-            <div id='social'>
-              <h2>Ethan</h2>
-              <Social />
-            </div>
+            <h2>Hi, there!</h2>
+            <p>I'm a full stack web developer with experience using the MERN stack as well as
+            PHP and MySQL. I am user-driven and enjoy working on creative, process-oriented teams.</p>
           </div>
         </div>
         <h2>Things I&apos;ve Built</h2>

@@ -40,19 +40,37 @@ export default function About() {
                 </div>
                 <h1>Technologies:</h1>
                 <div className={styles.main}>
-                    <div className={styles.half}>
-                        <h2>I have experience with...</h2>
-                        <ul>
-                            <li>React</li>
-                            <li>Next.js</li>
-                            <li>Node.js</li>
-                            <li>Passport.js</li>
-                            <li>Bootstrap</li>
-                            <li>Vercel</li>
-                            <li>Heroku</li>
-                            <li>MongoDB Atlas</li>
-                            <li>Git/Github</li>
-                        </ul>
+                    <h2>I have experience with...</h2>
+                    <div className={styles.technologies}>
+                        
+                        <div>                            
+                            <h3>Front-end</h3>
+                            <ul>
+                                <li>React</li>
+                                <li>Bootstrap</li>
+                                <li>Tailwind CSS</li>
+                                <li>Next.js</li>
+                            </ul>                            
+                            
+                            <h3>Back-end</h3>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>MongoDb</li>
+                                <li>Mongoose</li>
+                            </ul>                            
+                        </div>
+                        <div>
+                            <h3>DevOps</h3>
+                            <ul>
+                                <li>LAMP Stack</li>
+                                <li>Digital Ocean</li>
+                                <li>Nginx</li>
+                                <li>Vercel</li>
+                                <li>Heroku</li>
+                                <li>Git/Github</li>
+                            </ul>
+                        </div>   
                     </div>                    
                 </div>
             </div>

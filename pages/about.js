@@ -10,10 +10,10 @@ export default function About() {
                 <h1>Experience:</h1>
                 <div className={styles.main}>
                     <p>
-                        I first started learning HTML, CSS, and JavaScript back in 2015 and taught myself PHP in 2019, but it wasn&apost until
+                        I first started learning HTML, CSS, and JavaScript back in 2015 and taught myself PHP in 2019, but it wasn&apos;t until
                         2021 that I got serious about building projects. I started learning React in June, and found myself working on full-stack
                         apps within a few months. My learning has been helped by friends who are professional developers, podcasts like Clean Coders
-                        and Code Newbie, and the dev community in Dayton, which I&aposve been able to connect with through the Gem City Tech meetup.
+                        and Code Newbie, and the dev community in Dayton, which I&apos;ve been able to connect with through the Gem City Tech meetup.
                     </p>
                 </div>
                 <h1>Education:</h1>

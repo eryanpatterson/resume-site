@@ -14,9 +14,9 @@ export default function Home() {
         <Image 
         src={banner} 
         alt="Photo of website builder in park"
-        priority
         width={1949}
         height={1076}
+        priority
         layout='responsive'
         />
         
@@ -29,7 +29,7 @@ export default function Home() {
         <div className={styles.greeting}>
           <div className={styles.wrapper}>
             <h2>Hi, there!</h2>
-            <p>I'm a full stack web developer with experience using the MERN stack as well as
+            <p>I&aposm a full stack web developer with experience using the MERN stack as well as
             PHP and MySQL. I am user-driven and enjoy working on creative, process-oriented teams.</p>
           </div>
         </div>

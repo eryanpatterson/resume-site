@@ -10,18 +10,10 @@ export default function About() {
                 <h1>Experience:</h1>
                 <div className={styles.main}>
                     <p>
-                        For the last few years, I have worked primarily as a church
-                        musician, first as worship leader for a church plant in 
-                        Denver, Colorado, and now as music director for a rural Lutheran
-                        Church in the Dayton area. Working in a church requires a lot
-                        of communication, flexibility, and creative problem-solving,
-                        and I will carry that experience with me into my first professional
-                        role as a developer. My experience as a church musician has also
-                        given me an appreciation, as a user, for web-based tools and platforms
-                        like Planning Center and Mailchimp; as I grow and progress as 
-                        a developer, I am continually more curious what makes these 
-                        applications work.
-                        
+                        I first started learning HTML, CSS, and JavaScript back in 2015 and taught myself PHP in 2019, but it wasn't until
+                        2021 that I got serious about building projects. I started learning React in June, and found myself working on full-stack
+                        apps within a few months. My learning has been helped by friends who are professional developers, podcasts like Clean Coders
+                        and Code Newbie, and the dev community in Dayton, which I've been able to connect with through the Gem City Tech meetup.
                     </p>
                 </div>
                 <h1>Education:</h1>

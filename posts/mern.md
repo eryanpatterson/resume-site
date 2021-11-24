@@ -3,8 +3,6 @@ title: "Getting Started with the MERN Stack"
 date: '2021-11-23'
 ---
 
-# Getting Started With the MERN Stack
-
 In this day of static site generators and jamstack-style deployment through content-delivery networks, a "stack" in the traditional sense is not as much of a given as it once was. Old standbys like the LAMP stack (an Apache server serving a PHP back-end with a MySQL database and all running on a Linux machine) or .NET feel far removed from the bright-and-shiny world of Gatsby, Next.js, and others. 
 
 MERN is a traditional stack that still shares a lot with the fancy tools at the cutting edge of web development. A MERN stack is a Node.js back-end using Express.js, a Node web application framework, with a MongoDB database and all connected to a React front end. 

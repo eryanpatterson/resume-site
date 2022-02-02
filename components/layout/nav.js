@@ -56,10 +56,15 @@ const Nav = () => {
                     </Link>
                 </div>
                 <div className={styles.navbarItem}>
+                    <Link href='/contact'>
+                        <a>Contact</a>
+                    </Link>
+                </div>
+                {/*<div className={styles.navbarItem}>
                     <Link href='/blog'>
                         <a>Blog</a>
                     </Link>
-                </div>
+                </div> */}
             </nav>
         </div>
     )

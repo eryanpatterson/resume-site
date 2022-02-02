@@ -20,11 +20,7 @@ export default function Blog({ allPostsData }) {
     return (
         <Layout>
             <div className={styles.container}>
-                <div className={styles.blurb}>
-                    <h2>
-                        Dispatches from my journey as a dev
-                    </h2>
-                </div>
+
             <ul className={styles.list}>
                 {allPostsData.map(({ id, date, title }) => (
                     <li  key={id} className={styles.post}>

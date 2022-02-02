@@ -27,8 +27,9 @@ export default function Home() {
         <div className={styles.greeting}>
           <div className={styles.wrapper}>
             <h2>Hi, there!</h2>
-            <p>I&apos;m a singer, choral conductor, composer, and pianist. As a church musician, I have experience planning 
-            and leading traditional Protestant and Roman Catholic liturgy as well as liturgically-based contemporary worship experiences.</p>
+            <p>I&apos;m a singer, choral conductor, composer, and pianist. I teach voice lessons and am available to perform at events. 
+            As a church musician, I have experience planning and leading traditional Protestant and Roman Catholic liturgy
+            as well as liturgically-based contemporary worship experiences.</p>
           </div>
         </div>
         <h2>Experience</h2>

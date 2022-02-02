@@ -34,8 +34,8 @@ export default function Home() {
         <h2>Experience</h2>
         <div className={styles.portfolio}>
           <div>
-            <h3>St. John's Lutheran Church</h3>
-            <p>I am currently serving as the Music Director at <br/><a href="http://www.stjohnscovington.org">St. John's Lutheran Church</a> in Covington, Ohio. I conduct the choir,
+            <h3>St. John&apos;s Lutheran Church</h3>
+            <p>I am currently serving as the Music Director at <br/><a href="http://www.stjohnscovington.org">St. John&apos;s Lutheran Church</a> in Covington, Ohio. I conduct the choir,
             select hymnody, coordinate Psalm cantors and other special music, and fill in on the organ bench when needed.
             I also lead contemporary worship every 5th Sunday in a calendar month. </p>
           </div>
